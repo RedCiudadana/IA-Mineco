@@ -13,6 +13,9 @@ const Login = ({ onLogin }) => {
     const validEmail = import.meta.env.VITE_EMAIL;
     const validPassword = import.meta.env.VITE_PASSWORD;
 
+    console.log(validEmail, validPassword);
+    console.log(email, password);
+
     if (email === validEmail && password === validPassword) {
       onLogin(); // Cambia el estado de autenticación
       navigate('/'); // Redirige al usuario al índice después del login
